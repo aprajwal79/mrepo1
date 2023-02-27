@@ -1,0 +1,208 @@
+{% extends 'friends/base.html' %}
+{% block content %}
+{% load static %}
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center"  >
+              <div class="owl-carousel owl-banner">
+                <div class="item header-text">
+                  <h4>Welcome to I & E Cell</h4>
+                  </br>
+                  </br>
+                  <h2>It's the <em>Innovation</em> that <span>matters.</span></h2>
+                </div>
+
+                <div class="item header-text">
+                  <h4>Welcome to I & E Cell</h4>
+                  </br>
+                  </br>
+                  <h2>They are <em>Sudden</em> let them <span>flow.</span></h2>
+                </div>
+
+                <div class="item header-text">
+                  <h4>Welcome to I & E Cell</h4>
+                  </br>
+                  </br>
+                  <h2> Innovation <em>and</em> <span>Excellence.</span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="pricing" class="pricing-tables">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <h2> <em>Announcements</em> </h2>
+        </div>
+      </div>
+    </div>
+    </br>
+    <div class="list-group">
+      <a href="{% url 'startup' %}" class="list-group-item list-group-item-action" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Startup Expo</h5>
+          <small>3 mins ago</small>
+        </div>
+        <p class="mb-1">Young Entrepreneur's Ability Haul</p>
+        <small>
+          It's a Startup expo (start up showcase) in which participants have to inculcate self-efficacy, locus of control and level of resilience to ensure the plan which they initialized as a startup, aimed at providing college students with an opportunity to learn about the process of starting a business/Startup. The event will feature startups from various places and domain. The main motto of the event is to educate students about entrepreneurship by inculcating the essence of innovation and acknowledging their attained experiences.</small>                
+          </br></br><button href="{% url 'startup' %}" type="button" class="btn btn-outline-primary">Vote now</button>
+      </a>
+    </div>
+  </div>
+1</div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center" data-aos="fade-right">
+          <div class="left-image">
+            <img src="{% static 'assets/images/about-left-image.png' %}" alt="Two Girls working together">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>About <em>Us</em> </h2>
+            </br>
+            <p>E & I Cell, NIT Andhra Pradesh, believes that Innovation and Entrepreneurship complement each other. Our aim is to cultivate innovative and entrepreneurial temper among the students. The cell always lends a helping hand to the budding entrepreneurs and innovative minds. We start from identifying ideas and go towards nurturing them.
+              </br></br>We believe in your ideas and help you believe in your own ideas by extending our support and showing you the way forward. With us, you can foresee your success
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Our <em>Vision</em> </h2>
+            </br>
+            </br>
+            <p>We aim at building innovative, enterprising and thereby self-reliant India. We strive to create an impact to the society by instigating a change.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center" data-aos="fade-right">
+          <div class="left-image">
+            <img src="{% static 'assets/images/about-left-image1.png' %}" alt="Two Girls working together">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center" data-aos="fade-right">
+          <div class="left-image">
+            <img src="{% static 'assets/images/about-left-image2.png' %}" alt="Two Girls working together">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Our <em>Mission</em> </h2>
+            </br>
+            </br>
+            <p>E&I-Cell, NIT Andhra Pradesh is dedicated to fostering innovative ideas and entrepreneurial spirit within the institute. We provide a platform for creative and igniting minds to project their scientific, technological, managerial skills and help them mould their ideas into reality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="video" class="our-videos section">
+    <div class="videos-left-dec">
+      <img src="{% static 'assets/images/videos-left-dec.png' %}" alt="">
+    </div>
+    <div class="videos-right-dec">
+      <img src="{% static 'assets/images/videos-right-dec.png' %}" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/pYfQvacW-h4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </li>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      
+    
+    
+  </div>
+
+  <div class="footer-dec">
+    <img src="{% static 'assets/images/footer-dec.png' %}" alt="">
+  </div>
+
+ 
+
+  <!-- Scripts -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/animation.js' %}"></script>
+  <script src="{% static 'assets/js/imagesloaded.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  
+
+
+  
+
+  <script>
+
+  // Acc
+    $(document).on("click", ".naccs .menu div", function() {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+          $(".naccs .menu div").removeClass("active");
+          $(".naccs ul li").removeClass("active");
+
+          $(this).addClass("active");
+          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+          var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+          $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+  </script>
+</body>
+</html>
+{% endblock %}

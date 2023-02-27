@@ -1,0 +1,114 @@
+{% extends 'friends/base.html' %}
+{% block content %}
+{% load static %}
+
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class="section-heading">
+<h2>Coming <em>Soon</em> </h2>
+</br>
+<div class="footer-dec">
+<img src="{% static 'assets/images/footer-dec.png' %}" alt="">
+</div>
+<!--
+<div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="{% static 'assets/images/services-right-dec.png' %}" alt="">
+    </div>
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="{% static 'assets/images/services-left-dec.png' %}"alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2> Our <em>Members</em> </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+            <div class="col-lg-6">
+                <div class="item">
+                    <h4>Learn More about our Guidelines</h4>
+                    <img src="{% static 'assets/images/face-1.png' %}" width="45" height="45">
+                    <p>Feel free to use this template for your business</p>
+                </div>
+                <div class="item">
+                    <h4>Develop The Best Strategy for Business</h4>
+                    <div class="icon"><img src="{% static 'assets/images/face-2-1.png' %}"alt=""></div>
+                    <p>Get to know more about the topic in details</p>
+                    </div>
+                <div class="item">
+                    <h4>Develop The Best Strategy for Business</h4>
+                    <div class="icon"><img src="{% static 'assets/images/face-2-2.png' %}"alt=""></div>
+                    <p>Get to know more about the topic in details</p>
+                </div>
+                <div class="item">
+                    <h4>UI / UX Design and Development</h4>
+                    <div class="icon"><img src="{% static 'assets/images/face-2-3.png' %}" alt=""></div>
+                    <p>Get to know more about the topic in details</p>
+                </div>
+            </div>
+   
+            <div class="col-lg-6">
+                <div class="item">
+                <h4>Learn More about our Guidelines</h4>
+                <div class="icon"><img src="{% static 'assets/images/service-icon-01.png' %}" alt=""></div>
+                <p>Feel free to use this template for your business</p>
+                </div>
+                <div class="item">
+                <h4>Develop The Best Strategy for Business</h4>
+                <div class="icon"><img src="{% static 'assets/images/service-icon-02.png' %}"alt=""></div>
+                <p>Get to know more about the topic in details</p>
+                </div>
+                <div class="item">
+                <h4>UI / UX Design and Development</h4>
+                <div class="icon"><img src="{% static 'assets/images/service-icon-03.png' %}" alt=""></div>
+                <p>Get to know more about the topic in details</p>
+                </div>
+            </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="{% static 'assets/images/footer-dec.png' %}" alt="">
+  </div>
+-->
+ 
+
+  <!-- Scripts -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+  <script src="{% static 'assets/js/animation.js' %}"></script>
+  <script src="{% static 'assets/js/imagesloaded.js' %}"></script>
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+  
+  <script>
+
+  // Acc
+    $(document).on("click", ".naccs .menu div", function() {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+          $(".naccs .menu div").removeClass("active");
+          $(".naccs ul li").removeClass("active");
+
+          $(this).addClass("active");
+          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+          var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+          $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+  </script>
+{% endblock %}
